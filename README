@@ -1,0 +1,9 @@
+vim-utils
+=========
+
+Simple package for utilities that was sitting in my vimrc long, now as plugin.
+Contains:
+* Line moving shortcuts
+* Faster opening new line without going to Insert Mode
+* Simple macros starting with semicolon for faster code editing
+* A few simple functions (for now only one :/)
