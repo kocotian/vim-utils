@@ -1,5 +1,11 @@
 " Maintainer:   Kacper Kocot <kocotian@kocotian.pl>
 
+" Shortcuts to open html document in browser
+autocmd FileType html nnoremap <F24><F24> <Esc><Esc>:!$BROWSER file:///'%:p' &<CR>
+autocmd FileType html nnoremap <F24>q <Esc><Esc>:!qutebrowser file:///'%:p' &<CR>
+autocmd FileType html nnoremap <F24>s <Esc><Esc>:!surf file:///'%:p' &<CR>
+autocmd FileType html nnoremap <F24>c <Esc><Esc>:!chromium file:///'%:p' &<CR>
+
 " == Basic Vim Macros ==
 let @B = "069lf r\n"
 nnoremap ;BB 9999@B
@@ -141,5 +147,10 @@ function g:Once()
 	let macroname = "_" . substitute(expand('%:t'), '\.', '_', 'g')
 	execute "normal i#ifndef " . macroname . "\egUiwA\r#define " . macroname . "\egUiwA\r\t<+++>\r#endif\e?<+++>\r5s"
 endfunction
+
+" Scratchpad
+	autocmd BufRead,BufNewFile scratch.* set filetype=scratch
+	autocmd BufRead,BufNewFile scratch.* normal G
+	autocmd BufRead,BufNewFile scratch.* startinsert
 
 command Once call Once()
