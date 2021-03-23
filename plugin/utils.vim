@@ -21,44 +21,45 @@ vnoremap ;s :sort<CR>
 inoremap ;M <++>
 
 " Spaces
-autocmd FileType html,php,c,cpp,vimwiki,tex inoremap <Space><Space> <Esc>0/<++><CR>4s
-autocmd FileType html,php,c,cpp,vimwiki,tex inoremap <Space>d<Space> <Esc>0/<++><CR>ddi
-autocmd FileType html,php,c,cpp,vimwiki,tex inoremap <Space>k<Space> <Esc>0/<+++><CR>5s
+inoremap <Space><Space> <Esc>0/<++><CR>4s
+inoremap <Space>d<Space> <Esc>0/<++><CR>ddi
+inoremap <Space>k<Space> <Esc>0/<+++><CR>5s
 
-autocmd FileType html,php,c,cpp,vimwiki,tex inoremap <Space>n<Space> <Esc>/<++><CR>4s
-autocmd FileType html,php,c,cpp,vimwiki,tex inoremap <Space>dn<Space> <Esc>/<++><CR>ddi
-autocmd FileType html,php,c,cpp,vimwiki,tex inoremap <Space>kn<Space> <Esc>/<+++><CR>5s
+inoremap <Space>n<Space> <Esc>/<++><CR>4s
+inoremap <Space>dn<Space> <Esc>/<++><CR>ddi
+inoremap <Space>kn<Space> <Esc>/<+++><CR>5s
 
-autocmd FileType html,php,c,cpp,vimwiki,tex inoremap <Space>p<Space> <Esc>?<++><CR>4s
-autocmd FileType html,php,c,cpp,vimwiki,tex inoremap <Space>dp<Space> <Esc>?<++><CR>ddi
-autocmd FileType html,php,c,cpp,vimwiki,tex inoremap <Space>kp<Space> <Esc>?<+++><CR>5s
+inoremap <Space>p<Space> <Esc>?<++><CR>4s
+inoremap <Space>dp<Space> <Esc>?<++><CR>ddi
+inoremap <Space>kp<Space> <Esc>?<+++><CR>5s
 
-autocmd FileType html,php,c,cpp,vimwiki,tex nnoremap <Space> i<Space><Esc>l
+nnoremap <Space> i<Space><Esc>l
 
 " HTML, PHP
 autocmd FileType html,php inoremap ;! <!DOCTYPE html><CR><html><CR><head><CR><meta charset="UTF-8" /><CR><title><+++></title><CR><++><CR></head><CR><body><CR><++><CR></body><CR></html><Esc>?<+++><CR>5s
-autocmd FileType html,php inoremap ;o <CR><+++><CR><Esc>?<+++><CR>5s
-autocmd FileType html,php inoremap ;1 <h1><+++></h1><++><Esc>?<+++><CR>5s
-autocmd FileType html,php inoremap ;2 <h2><+++></h2><++><Esc>?<+++><CR>5s
-autocmd FileType html,php inoremap ;3 <h3><+++></h3><++><Esc>?<+++><CR>5s
-autocmd FileType html,php inoremap ;4 <h4><+++></h4><++><Esc>?<+++><CR>5s
-autocmd FileType html,php inoremap ;5 <h5><+++></h5><++><Esc>?<+++><CR>5s
-autocmd FileType html,php inoremap ;6 <h6><+++></h6><++><Esc>?<+++><CR>5s
-autocmd FileType html,php inoremap ;b <b><+++></b><++><Esc>?<+++><CR>5s
-autocmd FileType html,php inoremap ;i <i><+++></i><++><Esc>?<+++><CR>5s
-autocmd FileType html,php inoremap ;u <u><+++></u><++><Esc>?<+++><CR>5s
-autocmd FileType html,php inoremap ;st <s><+++></s><++><Esc>?<+++><CR>5s
-autocmd FileType html,php inoremap ;a <a href="<+++>"><++></a><Esc>?<+++><CR>5s
-autocmd FileType html,php inoremap ;I <img src="" /><Esc>3li
-autocmd FileType html,php inoremap ;p <p><+++></p><Esc>?<+++><CR>5s
-autocmd FileType html,php inoremap ;d <div><CR><++><CR></div><Esc>?<++><CR>4s
-autocmd FileType html,php inoremap ;Dc <div class="<+++>"><++></div><Esc>?<+++><CR>5s
-autocmd FileType html,php inoremap ;sp <span><+++></span><Esc>?<+++><CR>5s
-autocmd FileType html,php inoremap ;sup <sup><+++></sup><Esc>?<+++><CR>5s
-autocmd FileType html,php inoremap ;sub <sub><+++></sub><Esc>?<+++><CR>5s
-autocmd FileType html,php inoremap ;t <Tagname><++></Tagname><Esc>2?Tagname<CR>
+autocmd FileType html,php,stac inoremap ;o <CR><+++><CR><Esc>?<+++><CR>5s
+autocmd FileType html,php,stac inoremap ;1 <h1><+++></h1><++><Esc>?<+++><CR>5s
+autocmd FileType html,php,stac inoremap ;2 <h2><+++></h2><++><Esc>?<+++><CR>5s
+autocmd FileType html,php,stac inoremap ;3 <h3><+++></h3><++><Esc>?<+++><CR>5s
+autocmd FileType html,php,stac inoremap ;4 <h4><+++></h4><++><Esc>?<+++><CR>5s
+autocmd FileType html,php,stac inoremap ;5 <h5><+++></h5><++><Esc>?<+++><CR>5s
+autocmd FileType html,php,stac inoremap ;6 <h6><+++></h6><++><Esc>?<+++><CR>5s
+autocmd FileType html,php,stac inoremap ;b <b><+++></b><++><Esc>?<+++><CR>5s
+autocmd FileType html,php,stac inoremap ;i <i><+++></i><++><Esc>?<+++><CR>5s
+autocmd FileType html,php,stac inoremap ;u <u><+++></u><++><Esc>?<+++><CR>5s
+autocmd FileType html,php,stac inoremap ;st <s><+++></s><++><Esc>?<+++><CR>5s
+autocmd FileType html,php,stac inoremap ;a <a href="<+++>"><++></a><Esc>?<+++><CR>5s
+autocmd FileType html,php,stac inoremap ;I <img src="" /><Esc>3li
+autocmd FileType html,php,stac inoremap ;p <p><+++></p><Esc>?<+++><CR>5s
+autocmd FileType html,php,stac inoremap ;d <div><CR><++><CR></div><Esc>?<++><CR>4s
+autocmd FileType html,php,stac inoremap ;Dc <div class="<+++>"><++></div><Esc>?<+++><CR>5s
+autocmd FileType html,php,stac inoremap ;sp <span><+++></span><Esc>?<+++><CR>5s
+autocmd FileType html,php,stac inoremap ;sup <sup><+++></sup><Esc>?<+++><CR>5s
+autocmd FileType html,php,stac inoremap ;sub <sub><+++></sub><Esc>?<+++><CR>5s
+autocmd FileType html,php,stac inoremap ;t <Tagname><++></Tagname><Esc>2?Tagname<CR>
 autocmd FileType html noremap ;: <Esc>:set ft=php<CR>
 autocmd FileType php noremap ;: <Esc>:set ft=html<CR>
+autocmd FileType stac inoremap ;! @template = basic<CR><p><CR>	<+++><CR>%%<CR><Backspace></p><Esc>?<+++><CR>5s
 
 " C
 autocmd FileType c,cpp inoremap ;! #include <stdio.h><CR><CR>int<CR>main(int argc, char *argv[])<CR>{<CR><+++><CR>}<Esc>?<+++><CR>5s
@@ -94,29 +95,35 @@ autocmd FileType c,cpp inoremap ;Pd %d<++><Esc>f)i,<Space>
 autocmd FileType c,cpp inoremap ;Pc %c<++><Esc>f)i,<Space>
 autocmd FileType c,cpp inoremap ;Pp %p<++><Esc>f)i,<Space>
 
+autocmd FileType c,cpp nnoremap ;if Iif (<Esc>A) {<CR><+++><CR>} <++><Esc>?<+++><CR>5s
+autocmd FileType c,cpp nnoremap ;ei Ielse if (<Esc>A) {<CR><+++><CR>} <++><Esc>?<+++><CR>5s
+autocmd FileType c,cpp nnoremap ;wh Iwhile (<Esc>A) {<CR><+++><CR>}<CR><++><Esc>?<+++><CR>5s
+autocmd FileType c,cpp nnoremap ;fo Ifor (<Esc>A) {<CR><+++><CR>}<CR><++><Esc>?<+++><CR>5s
+autocmd FileType c,cpp nnoremap ;do Ido {<CR><+++><CR>} while (<Esc>A);<CR><++><Esc>?<+++><CR>5s
+
 " VimWiki
-autocmd FileType vimwiki inoremap ;1 =  =<CR><++><Esc>k01la
-autocmd FileType vimwiki inoremap ;2 ==  ==<CR><++><Esc>k02la
-autocmd FileType vimwiki inoremap ;3 ===  ===<CR><++><Esc>k03la
-autocmd FileType vimwiki inoremap ;4 ====  ====<CR><++><Esc>k04la
-autocmd FileType vimwiki inoremap ;5 =====  =====<CR><++><Esc>k05la
-autocmd FileType vimwiki inoremap ;b *<+++>* <++><Esc>?<+++><CR>5s
-autocmd FileType vimwiki inoremap ;i _<+++>_ <++><Esc>?<+++><CR>5s
-autocmd FileType vimwiki inoremap ;l [[<+++>]]<Esc>?<+++><CR>5s
+autocmd FileType vimwiki,scratch inoremap ;1 =  =<CR><++><Esc>k01la
+autocmd FileType vimwiki,scratch inoremap ;2 ==  ==<CR><++><Esc>k02la
+autocmd FileType vimwiki,scratch inoremap ;3 ===  ===<CR><++><Esc>k03la
+autocmd FileType vimwiki,scratch inoremap ;4 ====  ====<CR><++><Esc>k04la
+autocmd FileType vimwiki,scratch inoremap ;5 =====  =====<CR><++><Esc>k05la
+autocmd FileType vimwiki,scratch inoremap ;b *<+++>* <++><Esc>?<+++><CR>5s
+autocmd FileType vimwiki,scratch inoremap ;i _<+++>_ <++><Esc>?<+++><CR>5s
+autocmd FileType vimwiki,scratch inoremap ;l [[<+++>]]<Esc>?<+++><CR>5s
 
 " Colors for my VimWiki build
-autocmd FileType vimwiki inoremap ;,r ,r,r<Esc>hi
-autocmd FileType vimwiki inoremap ;,g ,g,g<Esc>hi
-autocmd FileType vimwiki inoremap ;,y ,y,y<Esc>hi
-autocmd FileType vimwiki inoremap ;,b ,b,b<Esc>hi
-autocmd FileType vimwiki inoremap ;,m ,m,m<Esc>hi
-autocmd FileType vimwiki inoremap ;,c ,c,c<Esc>hi
-autocmd FileType vimwiki inoremap ;,R ,R,R<Esc>hi
-autocmd FileType vimwiki inoremap ;,G ,G,G<Esc>hi
-autocmd FileType vimwiki inoremap ;,Y ,Y,Y<Esc>hi
-autocmd FileType vimwiki inoremap ;,B ,B,B<Esc>hi
-autocmd FileType vimwiki inoremap ;,M ,M,M<Esc>hi
-autocmd FileType vimwiki inoremap ;,C ,C,C<Esc>hi
+autocmd FileType vimwiki,scratch inoremap ;,r ,r,r<Esc>hi
+autocmd FileType vimwiki,scratch inoremap ;,g ,g,g<Esc>hi
+autocmd FileType vimwiki,scratch inoremap ;,y ,y,y<Esc>hi
+autocmd FileType vimwiki,scratch inoremap ;,b ,b,b<Esc>hi
+autocmd FileType vimwiki,scratch inoremap ;,m ,m,m<Esc>hi
+autocmd FileType vimwiki,scratch inoremap ;,c ,c,c<Esc>hi
+autocmd FileType vimwiki,scratch inoremap ;,R ,R,R<Esc>hi
+autocmd FileType vimwiki,scratch inoremap ;,G ,G,G<Esc>hi
+autocmd FileType vimwiki,scratch inoremap ;,Y ,Y,Y<Esc>hi
+autocmd FileType vimwiki,scratch inoremap ;,B ,B,B<Esc>hi
+autocmd FileType vimwiki,scratch inoremap ;,M ,M,M<Esc>hi
+autocmd FileType vimwiki,scratch inoremap ;,C ,C,C<Esc>hi
 
 " LaTeX
 autocmd FileType tex inoremap ;! \documentclass{article}<CR>\author{<+++>}<CR>\title{<++>}<CR><CR>\begin{document}<CR>\maketitle<CR>\tableofcontents<CR><CR><++><CR>\end{document}<Esc>?<+++><CR>5s
