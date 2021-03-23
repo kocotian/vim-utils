@@ -179,3 +179,5 @@ endfunction
 
 command ManGetFunctionCall call ManGetFunctionCall()
 nnoremap <silent> gK :ManGetFunctionCall<CR>
+
+nnoremap !\| :%!
