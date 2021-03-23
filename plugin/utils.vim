@@ -154,3 +154,28 @@ endfunction
 	autocmd BufRead,BufNewFile scratch.* startinsert
 
 command Once call Once()
+
+" Evaluating simple math in vimscript
+nnoremap <C-M-e> "myy:execute "echo " . @m<CR>
+inoremap <C-M-e> <Esc>"myy:execute "echo " . @m<CR>
+vnoremap <C-M-e> "my:execute "echo " . @m<CR>
+
+" Getting function from Manual
+function! ManGetFunctionCall()
+	normal "myiwe
+	try
+		execute "split man://" . @m . ".3"
+	catch
+		echoe "An error occured while opening manual"
+		exit
+	endtry
+	normal gg
+	execute "/[^a-zA-Z0-9]" . @m . "("
+	call setreg('m', "")
+	normal ^f("mya(
+	close
+	normal "mpF(
+endfunction
+
+command ManGetFunctionCall call ManGetFunctionCall()
+nnoremap <silent> gK :ManGetFunctionCall<CR>
